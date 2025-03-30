@@ -1,0 +1,18 @@
+{
+	"info": {
+		"_postman_id": "c6ea7b57-92f1-4ac0-b621-bdf13027de65",
+		"name": "Teste API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22880918"
+	},
+	"item": [
+		{
+			"name": "Busca",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
