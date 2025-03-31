@@ -5,7 +5,7 @@ import os
 from difflib import get_close_matches
 
 app = Flask(__name__)
-CORS(app)  # Isso permite requisições do frontend Vue.js
+CORS(app)
 
 # Carrega os dados do CSV
 def load_data():
@@ -32,7 +32,7 @@ def search_operadoras():
             "error": "O parâmetro 'q' é obrigatório",
             "message": "Por favor, informe um termo de busca",
             "example": "/api/search?q=saude"
-        }), 400  # Código 400 para Bad Request
+        }), 400
     
     try:
         results = []
@@ -41,9 +41,9 @@ def search_operadoras():
             row_dict = {}
             for key, value in row.items():
                 if pd.isna(value):
-                    row_dict[key] = None  # ou "" para string vazia
+                    row_dict[key] = None
                 else:
-                    row_dict[key] = str(value)  # Garante que tudo é string
+                    row_dict[key] = str(value)
                     
             full_text = ' '.join(str(v) for v in row_dict.values() if v).lower()
             if query in full_text:
