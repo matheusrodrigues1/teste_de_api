@@ -103,7 +103,6 @@ export default {
       } catch (err) {
         console.error("Erro completo:", err);
         if (err.response) {
-          // Erro 400 (Bad Request) ou outros códigos
           this.error =
             err.response.data.message ||
             err.response.data.error ||
@@ -129,7 +128,6 @@ export default {
 </script>
 
 <style scoped>
-/* Seus estilos permanecem os mesmos */
 .search-container {
   max-width: 800px;
   margin: 0 auto;
