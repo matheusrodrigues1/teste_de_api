@@ -10,9 +10,37 @@
 			"name": "Busca",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/search?q=unimed",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "unimed"
+						}
+					]
+				}
 			},
-			"response": []
+			"response": [
+				{
+					"Registro_ANS": "12345",
+					"CNPJ": "12.345.678/0001-90",
+					"Razao_Social": "UNIMED RIO BRANCO COOPERATIVA",
+					"Nome_Fantasia": "UNIMED RIO BRANCO",
+					"Modalidade": "Cooperativa Médica",
+					"Cidade": "Rio Branco",
+					"UF": "AC"
+				}
+			]
 		}
 	]
 }
