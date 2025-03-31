@@ -5,6 +5,8 @@
 ![Vue.js](https://img.shields.io/badge/Vue.js%2B-green)
 ![status 200OK](./frontend/src/assets/image3.png)
 
+Este teste implementa uma API em Python/Flask e interface web em Vue.js para consulta aos dados cadastrais de operadoras de saúde da Agência Nacional de Saúde Suplementar (ANS).
+
 ## 📋 Pré-requisitos
 
 - Python 3.8+
